@@ -1,7 +1,9 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    USER_PROFILE_ID: process.env.USER_PROFILE_ID || 'user-profile-001',
+  },
 }
 
 export default nextConfig
