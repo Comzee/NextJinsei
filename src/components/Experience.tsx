@@ -35,7 +35,7 @@ export async function Experience() {
         return (
           <section
             className={classStr('break-inside-avoid', style.subsectionSpacing)}
-            key={employer}
+            key={`${employer}-${startDate}-${endDate}`}
           >
             <header>
               <h3 id="job-title" className={style.title}>
